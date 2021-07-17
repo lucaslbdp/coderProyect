@@ -5,16 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
     <title>Mi primer desafío</title>
 </head>
 
 <body>
-    <header class="pre-header">
+    <header class="pre-header container">
         <div>
             <a target="_blank noreferrer" href="https://api.whatsapp.com/send?phone=+5493816851705">
                 <img src="./img/phone-call.png" alt="telefono">
@@ -32,7 +38,7 @@
         </div>
     </header>
 
-    <header class="header">
+    <header class="header container-fluid">
         <div class="header__logo">
             <a href="index.html">
                 <img src="./img/logo.png" alt="logo de empresa"></a>
@@ -49,9 +55,48 @@
     </header>
 
     <main>
-        <section id="intro">
-            <h1 class="intro__title">El diseño que tu marca necesita</h1>
-        </section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner carrusel">
+                <div class="carousel-item active">
+                    <img src="./img/background.jpg" class="d-block w-100" alt="img fondo">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="title">El diseño que tu marca necesita</h1>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="./img/carrusel2.jpg" class="d-block w-100" alt="img-fondo">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="title">Calidad de diseño asegurada</h1>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="./img/carrusel3.jpg" class="d-block w-100" alt="img-fondo">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="title3">Aumentá la imagen de tu marca</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <section class="service">
             <h2>Servicios</h2>
             <div class="service__bdr">
@@ -87,6 +132,62 @@
             </ul>
         </nav>
 
+        <section class="branding">
+            <div class="branding__titleDiv col-md-3 col-xxl-2">
+                <h2>Branding</h2>
+                <ul>
+                    <li>Tu marca tendrá identidad</li>
+                    <li>Estará lista para su aplicación</li>
+                    <li>Representará tus ideas</li>
+                </ul>
+                <a target="_blank noreferrer" href="https://api.whatsapp.com/send?phone=+5493816851705"><button
+                        type="button" class="btn btn-outline-danger">
+                        Pedir presupuesto</button></a>
+            </div>
+            <div class="col-xxl-5">
+                <img src="./img/branding1.png" alt="ejemplo de marca">
+            </div>
+        </section>
+
+        <section class="branding">
+            <div class="col-md-6 col-xxl-2">
+                <img src="./img/branding2.png" alt="ejemplo de marca">
+            </div>
+            <div class=" col-md-4 col-sm-6 col-xxl-3">
+                <h2>Diseño gráfico</h2>
+                <h5>Realizamos piezas gráficas para tu marca</h5>
+                <ul>
+                    <li>Flyers digitales y físicos</li>
+                    <li>Piezas gráficas para redes sociales</li>
+                    <li>Imágenes a medidas</li>
+                </ul>
+                <a target="_blank noreferrer" href="https://api.whatsapp.com/send?phone=+5493816851705"><button
+                        type="button" class="btn btn-outline-danger">
+                        Pedir presupuesto</button></a>
+            </div>
+        </section>
+
+        <section class="branding">
+            <div class="branding__titleDiv col-md-4 col-xxl-2">
+                <h2>Redes sociales</h2>
+                <h5>Manejamos tus redes sociales para tenerlas en actividad y por sobre todo, con una estética adecuada.
+                </h5>
+                <ul>
+                    <li>Tus redes con una buena imagen</li>
+                    <li>Subimos contenidos gráficos propios</li>
+                    <li>Hacemos los anuncios que necesites (opcional)</li>
+                </ul>
+                <a target="_blank noreferrer" href="https://api.whatsapp.com/send?phone=+5493816851705"><button
+                        type="button" class="btn btn-outline-danger">
+                        Pedir presupuesto</button></a>
+            </div>
+            <div class="col-md-2 col-xxl-6">
+                <img src="./img/notebook.png" alt="redes">
+            </div>
+        </section>
+
+
+
 
         <div class="position-whatsapp">
             <a target="_blank noreferrer" href="https://api.whatsapp.com/send?phone=+5493816851705">
@@ -100,19 +201,27 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.644945126597!2d-65.22689638547901!3d-26.81943178316784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c4498d0fda3%3A0x348123cdc96de6ba!2sSantiago%20del%20Estero%201927%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1623858280558!5m2!1ses-419!2sar"
                 width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <div class="footer__redes">
+        <div class="footer__redes col-sm-4">
             <h2>Seguinos en nuestras redes: </h2>
             <ul>
                 <li><a target="_blank noreferrer" href="https://api.whatsapp.com/send?phone=+5493816851705" class="wsp">
-                <img src="./img/whatsapp.png" alt="logo de whatsapp"></a></li>
-                <li><a target="_blank noreferrer" href="https://www.instagram.com/g5.desings/"
-                    class="instagram">
+                        <img src="./img/whatsapp.png" alt="logo de whatsapp"></a></li>
+                <li><a target="_blank noreferrer" href="https://www.instagram.com/g5.desings/" class="instagram">
                         <img src="./img/instagram.png" alt="logo de instragram"></a></li>
                 <li><a target="_blank noreferrer" href="https://www.facebook.com/G5ESTAM/" class="face">
-                    <img src="./img/facebook.png" alt="logo de face" ></a></li>
+                        <img src="./img/facebook.png" alt="logo de face"></a></li>
             </ul>
         </div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
