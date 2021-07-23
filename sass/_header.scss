@@ -1,0 +1,51 @@
+.header {
+    background-color: $header-color;
+    height: 110px;
+    position: sticky;
+    top: 0;
+  }
+  
+  .header__logo {
+    height: 40px;
+    margin-left: 150px;
+    img {
+      width: 80px;
+      height: auto;
+      margin-top: 15px;
+      animation-duration: 4s;
+      animation-name: aparecer;
+      animation-iteration-count: infinite;
+    }
+  }
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .header__menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 80px;
+    margin-top: 0;
+    ul {
+      display: flex;
+      text-decoration: none;
+    }
+    ul li {
+      margin: 0px 15px;
+    }
+    ul li a {
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: #292f3d;
+      font-weight: bold;
+    }
+    ul li a:hover {
+      color: $header-a-hover;
+    }
+  }
