@@ -36,16 +36,17 @@
       display: flex;
       text-decoration: none;
     }
-    ul li {
+    li {
       margin: 0px 15px;
     }
-    ul li a {
+    a {
       text-decoration: none;
       font-size: 1.1rem;
       color: #292f3d;
       font-weight: bold;
     }
-    ul li a:hover {
+    a:hover {
       color: $header-a-hover;
     }
   }
+
