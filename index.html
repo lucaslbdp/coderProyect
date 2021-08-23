@@ -40,24 +40,46 @@
         </div>
     </header>
 
-    <header class="header container-fluid">
+    <header class="header fixed-top container-fluid">
         <div class="header__logo">
-            <a href="index.html">
+            <a href="./index.html">
                 <img src="./img/logo.png" alt="logo de empresa"></a>
         </div>
-        <nav class="header__menu">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
-                <li><a href="./pages/servicios.html">Servicios</a></li>
-                <li><a href="./pages/trabajos.html">Trabajos</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="header__menu navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav ml-auto mt-2">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sobre-nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./pages/trabajos.html">Trabajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
         </nav>
+        </div>
     </header>
 
     <main id="main">
-        <div id="carouselExampleIndicators" class="carousel slide container" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -66,26 +88,17 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner carrusel">
+            <div class="carousel-inner carrusel container-fluid">
                 <div class="carousel-item active">
                     <img src="./img/background.jpg" class="d-block w-100" alt="img fondo">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1 class="title">El diseño que tu marca necesita</h1>
-                    </div>
                 </div>
 
                 <div class="carousel-item">
                     <img src="./img/carrusel2.jpg" class="d-block w-100" alt="img-fondo">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1 class="title">Calidad de diseño asegurada</h1>
-                    </div>
                 </div>
 
                 <div class="carousel-item">
                     <img src="./img/carrusel3.jpg" class="d-block w-100" alt="img-fondo">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1 class="title3">Aumentá la imagen de tu marca</h1>
-                    </div>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -99,26 +112,28 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        <h2 class="service__title">Servicios</h2>
         <section class="service">
-            <h2>Servicios</h2>
-            <div class="service__bdr">
+            <div>
                 <span>B</span>
-                <span>D</span>
-                <span>R</span>
-            </div>
-            <div class="service__title">
                 <h3>Branding</h3>
-                <h3>Diseño</h3>
-                <h3>Redes</h3>
+                Creamos tu marca desde el comienzo, dándole una estética e impronta para salir al mercado con su
+                identidad definida.
             </div>
-            <article class="service__text">
-                <div>Creamos tu marca desde el comienzo, dándole una estética e impronta para salir al mercado con su
-                    identidad definida.</div>
-                <div>Todos los diseños que tu marca necesitan para generar un impacto visual elegante y estratégico.
-                </div>
-                <div>La presencia de una marca en las redes es uno de los aspectos más importantes para una
-                    empresa. ¡Sabemos hacerlo!</div>
-            </article>
+            <div>
+                <span>D</span>
+                <h3>Diseño</h3>
+                Todos los diseños que tu marca necesitan para generar un impacto visual elegante y estratégico.
+            </div>
+            <div>
+                <span>R</span>
+                <h3>Redes</h3>
+                La presencia de una marca en las redes es uno de los aspectos más importantes para una
+                empresa. ¡Sabemos hacerlo!
+            </div>
+
+
+
         </section>
 
         <nav class="nav-sticky">
@@ -171,7 +186,8 @@
         <section class="container" id="index-section">
             <div>
                 <h2>Redes sociales</h2>
-                <p class="parrafo">Manejamos tus redes sociales para tenerlas en actividad y por sobre todo, con una estética adecuada</p>
+                <p class="parrafo">Manejamos tus redes sociales para tenerlas en actividad y por sobre todo, con una
+                    estética adecuada</p>
                 <ul>
                     <li>Tus redes con una buena imagen</li>
                     <li>Subimos contenidos gráficos propios</li>
@@ -214,11 +230,14 @@
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
 </body>

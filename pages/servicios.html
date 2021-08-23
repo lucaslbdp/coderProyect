@@ -38,20 +38,42 @@
         </div>
     </header>
 
-    <header class="header">
+    <header class="header fixed-top container-fluid">
         <div class="header__logo">
             <a href="../index.html">
                 <img src="../img/logo.png" alt="logo de empresa"></a>
         </div>
-        <nav class="header__menu">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./sobre-nosotros.html">Sobre nosotros</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./trabajos.html">Trabajos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="header__menu navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav ml-auto mt-2">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre-nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./trabajos.html">Trabajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
         </nav>
+        </div>
     </header>
 
     <main>
@@ -60,7 +82,7 @@
 
         <div id="grid-area">
             <section id="colum1">
-                <img src="../img/alguien-diseñando.webp" alt="img nosotros">
+                <img src="../img/alguien-diseñando.webp" alt="img nosotros" class="img-grande">
                 <div>
                     <img src="../img/medios-redes.png" alt="redes" class="img-chica">
                     <h2>Diseñamos tus redes</h2>
@@ -69,7 +91,8 @@
                 <div>
                     <img src="../img/linea-grafica.png" alt="linea grafica" class="img-chica">
                     <h2>Piezas gráficas</h2>
-                    <p>Diseñamos piezas digitales para tus redes que acompañen al contenido, o piezas gráficas para impresión.</p>
+                    <p>Diseñamos piezas digitales para tus redes que acompañen al contenido, o piezas gráficas para
+                        impresión.</p>
                 </div>
             </section>
             <section id="colum2">
@@ -81,16 +104,19 @@
                 <div>
                     <img src="../img/verificado.png" alt="presentacion de marca" class="img-chica">
                     <h2>Presentación de marca</h2>
-                    <p>Va seguido de la presentación de logo, presentaremos un PDF con tu manual de marca y especificaciones.</p>
+                    <p>Va seguido de la presentación de logo, presentaremos un PDF con tu manual de marca y
+                        especificaciones.</p>
                 </div>
-                <img src="../img/img-redes-sociales.jpg" alt="img redes">
+                <img src="../img/img-redes-sociales.jpg" alt="img redes" class="img-grande">
             </section>
 
         </div>
 
         <section class="importante-saber">
             <h1>¡Importante saber!</h1>
-            <h3>Los servicios aquí plasmados no se realizan todos por separados. Hay procesos que deben realizarse juntos. Para ello recomendamos ponerse en contacto con nosotros para presupuestar y definir los trabajos.</h3>
+            <h3>Los servicios aquí plasmados no se realizan todos por separados. Hay procesos que deben realizarse
+                juntos. Para ello recomendamos ponerse en contacto con nosotros para presupuestar y definir los
+                trabajos.</h3>
         </section>
 
 
@@ -110,12 +136,11 @@
             <h2>Seguinos en nuestras redes: </h2>
             <ul>
                 <li><a target="_blank noreferrer" href="https://api.whatsapp.com/send?phone=+5493816851705" class="wsp">
-                <img src="../img/whatsapp.png" alt="logo de whatsapp"></a></li>
-                <li><a target="_blank noreferrer" href="https://www.instagram.com/g5.desings/"
-                    class="instagram">
+                        <img src="../img/whatsapp.png" alt="logo de whatsapp"></a></li>
+                <li><a target="_blank noreferrer" href="https://www.instagram.com/g5.desings/" class="instagram">
                         <img src="../img/instagram.png" alt="logo de instragram"></a></li>
                 <li><a target="_blank noreferrer" href="https://www.facebook.com/G5ESTAM/" class="face">
-                    <img src="../img/facebook.png" alt="logo de face" ></a></li>
+                        <img src="../img/facebook.png" alt="logo de face"></a></li>
             </ul>
         </div>
     </footer>
